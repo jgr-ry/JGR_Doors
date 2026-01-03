@@ -15,6 +15,10 @@ client_scripts {
 	'client.lua',
 }
 
+server_scripts {
+    'updates.lua',
+}
+
 lua54 'yes'
 
 dependency 'qbx_core'
