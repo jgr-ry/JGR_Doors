@@ -68,10 +68,7 @@ Citizen.CreateThread(function()
                                 if lock and lock >= 2 then
                                     notifyLocked()
                                 else
-                                    SetVehicleDoorOpen(vehicle, bone.doorIndex, false, false)
-                                    TaskEnterVehicle(ped, vehicle, 20000, bone.seat, 2.0, 1, 0)
-                                    Wait(700)
-                                    SetVehicleDoorShut(vehicle, bone.doorIndex, false)
+                                        TaskEnterVehicle(ped, vehicle, 20000, bone.seat, 2.0, 1, 0)
                                 end
                                 hideInteractionText()
                                 break
