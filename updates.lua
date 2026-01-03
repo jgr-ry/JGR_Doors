@@ -1,4 +1,6 @@
-if Config.enableUpdates then
+local enableUpdates = true 
+
+if enableUpdates then
     local function GitHubUpdate()
         -- URL actualizada al repositorio correcto proporcionado
         local updateUrl = 'https://raw.githubusercontent.com/jgr-ry/JGR_Doors/main/fxmanifest.lua'
@@ -11,6 +13,9 @@ if Config.enableUpdates then
 
             -- Obtener versión local desde el manifest
             local actual = GetResourceMetadata(GetCurrentResourceName(), 'version')
+            
+            -- Si no hay versión en el manifest local, ponemos una por defecto para evitar errores
+            if not actual then actual = "0.0.0" end
             
             -- Buscar la versión en el texto del manifest de GitHub
             local versionMatch = result:match("version ['\"](%d+%.%d+%.%d+)['\"]")
