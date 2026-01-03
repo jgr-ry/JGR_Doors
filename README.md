@@ -1,6 +1,6 @@
 # 🚗 JGR - Entrada por Puerta (Door Entry)
 
-[![FiveM](https://img.shields.io/badge/FiveM-v1.0.1-orange.svg)](https://fivem.net/)
+[![FiveM](https://img.shields.io/badge/FiveM-v1.0.0-orange.svg)](https://fivem.net/)
 [![Framework](https://img.shields.io/badge/Framework-Qbox%20/%20QBCore-blue.svg)](https://github.com/qbox-project/qbx_core)
 [![Dependency](https://img.shields.io/badge/Dependency-ox__lib-red.svg)](https://github.com/overextended/ox_lib)
 
