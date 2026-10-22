@@ -83,7 +83,7 @@ set jgr_versioncheck 0
 ### 1.1.0
 - Compatible con **QBCore, Qbox, ESX y standalone/ox_core**: se quitan `dependency 'qbx_core'` y los módulos `@qbx_core/...` del fxmanifest; nuevo `bridge/client.lua` con detección automática y `Config.Framework`.
 - Nuevo `config.lua` (tecla, distancias, textos, cierres, notificaciones).
-- Nuevo comprobador de versiones común (`server/version_check.lua`). Se elimina `updates.lua`, que se presentaba como «JGR Flip-car» y comparaba versiones quitando los puntos (1.10.0 se consideraba menor que 1.9.0).
+- Nuevo comprobador de versiones común (`server/version_check.lua`). Se elimina `updates.lua`, que se presentaba como «JGR Flip-car» y comparaba versiones quitando los puntos (p. ej. 1.1.10 → 1110 se consideraba más nueva que 1.2.0 → 120).
 - Se usa la puerta **más cercana** en vez de la primera que entraba en el rango.
 - No se ofrecen puertas traseras si el vehículo no tiene esos asientos.
 - El aviso de vehículo cerrado usa la notificación del framework (configurable con `Config.Notify`) y también tiene en cuenta los vehículos cerrados solo para el jugador.
